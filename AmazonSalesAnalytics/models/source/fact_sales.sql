@@ -7,7 +7,7 @@ with fact_sales as (
         [Currency] as Currency ,
         [b2b] as B2B ,
         [Status] as [AmazonStatus],
-        [Courier Status] as [CourierStatus],
+        --[Courier Status] as [CourierStatus],
         Sum([Amount]) as [TotalAmount],
         Sum([Qty]) as ItemsQuantity,
         l.LocationID as [LocationID],
@@ -23,14 +23,14 @@ with fact_sales as (
         AND r.[ship-service-level] = f.ShipServiceLevel
         --AND r.[fulfilled-by] = f.FulfilledBy
     left join dwh.dim_date d on cast(r.[Date]  as Date) = d.[Date]
-    --where Qty!=0 and Currency is not null
+    where Qty!=0 and Currency is not null
     group by 
         [order id],
         [Sales Channel],
         [Currency],
         [b2b],
         [Status],
-        [Courier Status],
+        --[Courier Status],
         l.LocationID,
         f.FulfillmentID,
         d.DateID
