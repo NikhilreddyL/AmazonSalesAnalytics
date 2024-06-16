@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the SQL models used to design and implement a data warehouse for sales analytics. The data model is designed as a star schema to support efficient querying and reporting in Power BI.
+This repository contains the SQL models used to design and implement a data warehouse for sales analytics using dbt(Data Build Tool). The data model is designed as a star schema to support efficient querying and reporting in Power BI.
 
 Also a Power BI report build on top of data warehouse for visualizations
 
