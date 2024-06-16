@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: analytics_raw
+    database: analytics-raw
+    schema: dbo
+    tables:
+      - name: raw_data
