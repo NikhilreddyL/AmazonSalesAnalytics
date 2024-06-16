@@ -1,4 +1,4 @@
-# Sales Analytics Data Model
+# Amazon Sales Analytics Use Case
 
 ## Overview
 
